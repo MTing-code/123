@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+button{
+	cursor: pointer;
+}
+#container{
+	position: absolute;
+	left: 500px;
+	top: 100px;
+	width: 320px;
+	height:568px;
+}        
+#planes{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}                                             
+#start-con{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 320px;
+	height:568px;
+	background-image: url(../image/ks.png);
+	display: block;
+}
+#start-con button{
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	background-color: #c4c9ca;
+	border-radius:30px;
+	position: absolute;
+	left: 50%;
+	transform:translateX(-50%);
+	bottom: 38px;
+	outline: none;
+}
+#game-con{
+	position: absolute;
+	left:0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	/*background: url(../image/background_1.png);*/
+    background: url("../image/background_1.png");
+	
+}
+#score-board{
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 10px;
+	vertical-align: middle;
+	z-index: 99999;
+}
+#suspend-board{
+	display: none;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	z-index: 20;
+}
+#suspend-board button{
+	display: block;
+	width: 150px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	background-color: #c4c9ca;
+	border-radius:30px;
+	outline: none;
+	margin: 20px 0;
+}
+#end-board{ 
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	width: 160px;
+	border: 1px solid grey;
+	background-color: #d7ddde;
+	border-radius:10px;
+	font-size: 16px;
+	text-align: center;
+	z-index: 20;
+}
+#end-board div{ 
+	padding: 10px 0;
+}
+#end-board div:nth-child(2){ 
+	border-top: 1px solid #6a6e80;
+	border-bottom: 1px solid #5c5d80;
+}
+#end-board button{ 
+	display: block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid black;
+	background-color: #c4c9ca;
+	border-radius:30px;
+	outline: none;
+	margin:10px 40px;
+}
